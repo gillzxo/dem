@@ -35,7 +35,7 @@ except (KeyError, ValueError):
     sys.exit(1)
 
 trust_headers = bool(os.environ.get("TRUST_FORWARD_HEADERS"))
-host = "0.0.0.0."
+host = "localhost"
 public_url = URL(os.environ.get("PUBLIC_URL", f"http://{host}:{port}"))
 
 session_name = os.environ.get("TG_SESSION_NAME", "tgfilestream")
