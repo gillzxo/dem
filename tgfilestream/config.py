@@ -19,7 +19,7 @@ import os
 from yarl import URL
 
 try:
-    port = 10000
+    port = 8080
 except ValueError:
     port = -1
 if not 1 <= port <= 65535:
